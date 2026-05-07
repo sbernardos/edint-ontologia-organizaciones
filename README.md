@@ -1,26 +1,18 @@
-# Ontología XXX
+# Ontología EDINT de Organizaciones Públicas
 
-La ontología XXX represent el dominio XXXX.
-
+La ontología de Organizaciones públicas representa el dominio de los organismos públicos (y sus organigramas) en España.
+Está siendo desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es/)).
 
 # Propósito y alcance de la ontología
 
-El propósito de la ontología XXX es YYYY. 
-El alcance de la ontología XXX está limitado a ZZZZ.
+El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones.
+Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos de EDINT.
 
 # Prefijo y espacio de nombres de la ontología
 
-El prefijo de la ontología es: XXX y se encuentra publicada en el espacio de nombres: https://webdomain.ext/def/domain/subdomain# 
+El prefijo de la ontología es: edintorg y se encuentra publicada en el espacio de nombres: http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#
 
 # Modelo conceptual de la ontología
-
-Cada repositorio de desarrollo de ontologías debe incluir, en este README principal, una representación visual de la conceptualización de la ontología.
-Esta imagen ayuda a los usuarios y colaboradores a comprender rápidamente la estructura de la ontología, sus conceptos clave y las relaciones entre ellos.
-
-- La imagen debe estar ubicada en la carpeta de conceptualización.
-- Formatos aceptados: .svg, .png o .drawio.
-- Debe referenciarse en este README usando la sintaxis de Markdown, por ejemplo:
-
 
 ![Diagrama del modelo conceptual](diagrams/diagrama.png)
 
@@ -40,7 +32,7 @@ El repositorio debe contener (al menos) las siguientes carpetas
 
 # Mantenimiento del proyecto
 
-Para gestionar esos incidentes o las mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en [Issues Management](https://github.com/nombre-repositorio/wiki/issues-management) para generar incidecias (trabajo en progreso).
+Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
 # Financiación
 
