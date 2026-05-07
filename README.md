@@ -6,7 +6,7 @@ Está siendo desarrollada en el contexto del Espacio de Datos para las Infraestr
 # Propósito y alcance de la ontología (Purpose and scope of the ontology)
 
 El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones.
-Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos de EDINT.
+Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos de EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye edintinf:Equipamiento como subclase de Sede.
 
 # Prefijo y espacio de nombres de la ontología (Prefix and namespace)
 
