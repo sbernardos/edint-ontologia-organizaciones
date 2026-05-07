@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+@prefix edintkosadmlev: <http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+edintkos:AdministrationLevel a skos:ConceptScheme ; 
+    dct:issued "2026-05-07"^^xsd:date ;
+    dct:modified "2026-05-07"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
+    rdfs:label "Administration level"@en ;
+    rdfs:label "Nivel de administración"@es ;
+    dct:title "Concept scheme grouping levels of organizations in the public administration"@en ;
+    dct:title "Esquema de conceptos que agrupa niveles de las organizaciones de la administración pública"@es ;
+    skos:hasTopConcept edintkosadmlev:1 ;
+    skos:hasTopConcept edintkosadmlev:2 ;
+    skos:hasTopConcept edintkosadmlev:3 ;
+	skos:hasTopConcept edintkosadmlev:4 ;
+	skos:hasTopConcept edintkosadmlev:5 .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+edintkosadmlev:1 a skos:Concept ;
+	skos:inScheme edintkos:AdministrationLevel ;
+    skos:notation "1" ;
+  	skos:prefLabel "Administración General del Estado"@es ;
+    skos:prefLabel "Country General Administration"@en .
+	
+edintkosadmlev:1 a skos:Concept ;
+	skos:inScheme edintkos:AdministrationLevel ;
+    skos:notation "2" ;
+  	skos:prefLabel "Administración autonómica"@es ;
+    skos:prefLabel "Regional administration"@en .	
+	
+edintkosadmlev:3 a skos:Concept ;
+	skos:inScheme edintkos:AdministrationLevel ;
+    skos:notation "3" ;
+  	skos:prefLabel "Administración local"@es ;
+    skos:prefLabel "Local administration"@en .	
+
+edintkosadmlev:4 a skos:Concept ;
+	skos:inScheme edintkos:AdministrationLevel ;
+    skos:notation "4" ;
+  	skos:prefLabel "Universidades"@es ;
+    skos:prefLabel "Universities"@en .
+
+edintkosadmlev:5 a skos:Concept ;
+	skos:inScheme edintkos:AdministrationLevel ;
+    skos:notation "5" ;
+  	skos:prefLabel "Otras instituciones"@es ;
+    skos:prefLabel "Other institutions"@en .
+
+

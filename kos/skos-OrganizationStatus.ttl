@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+@prefix edintkosorgsta: <http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+edintkos:OrganizationStatus a skos:ConceptScheme ; 
+    dct:issued "2026-05-07"^^xsd:date ;
+    dct:modified "2026-05-07"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
+    rdfs:label "Organization status"@en ;
+    rdfs:label "Estado de organización"@es ;
+    dct:title "Concept scheme grouping status of organizations in the public administration"@en ;
+    dct:title "Esquema de conceptos que agrupa estados de las organizaciones de la administración pública"@es ;
+    skos:hasTopConcept edintkosorgsta:InForce ;
+    skos:hasTopConcept edintkosorgsta:Extinct ;
+    skos:hasTopConcept edintkosorgsta:Cancelled ;
+	skos:hasTopConcept edintkosorgsta:Transitory .
+
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+edintkosorgsta:InForce a skos:Concept ;
+	skos:inScheme edintkos:OrganizationStatus ;
+  	skos:prefLabel "Vigente"@es ;
+    skos:prefLabel "In force"@en .
+
+edintkosorgsta:Extinct a skos:Concept ;
+	skos:inScheme edintkos:OrganizationStatus ;
+  	skos:prefLabel "Extinguido"@es ;
+    skos:prefLabel "Extinct"@en .
+
+edintkosorgsta:Cancelled a skos:Concept ;
+	skos:inScheme edintkos:OrganizationStatus ;
+  	skos:prefLabel "Anulado"@es ;
+    skos:prefLabel "Cancelled"@en .
+
+edintkosorgsta:Transitory a skos:Concept ;
+	skos:inScheme edintkos:OrganizationStatus ;
+  	skos:prefLabel "Transitorio"@es ;
+    skos:prefLabel "Transitory"@en .

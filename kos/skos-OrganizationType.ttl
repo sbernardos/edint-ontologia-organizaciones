@@ -1,0 +1,271 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+@prefix edintkosorgtype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel/> .
+
+#################################################################
+#
+#    Concept Scheme
+#
+#################################################################
+
+edintkos:AdministrationLevel a skos:ConceptScheme ; 
+    dct:issued "2026-05-07"^^xsd:date ;
+    dct:modified "2026-05-07"^^xsd:date ;
+    cc:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:comment "This concept scheme belongs to the set of controlled SKOS-based thesauri used by the ontologies from the EDINT data space."@en ;
+    rdfs:comment "Este esquema de conceptos pertenece al conjunto de tesauros SKOS usados por las ontologías del espacio de datos EDINT."@es ;
+    rdfs:label "Organization type"@en ;
+    rdfs:label "Tipo de organización"@es ;
+    dct:title "Concept scheme grouping types of organizations in the public administration"@en ;
+    dct:title "Esquema de conceptos que agrupa tipos de las organizaciones de la administración pública"@es ;
+	skos:hasTopConcept edintkosorgtype:AE ;
+    skos:hasTopConcept edintkosorgtype:AG ;
+    skos:hasTopConcept edintkosorgtype:AI ;
+    skos:hasTopConcept edintkosorgtype:AM ;
+    skos:hasTopConcept edintkosorgtype:AP ;
+    skos:hasTopConcept edintkosorgtype:AT ;
+    skos:hasTopConcept edintkosorgtype:AY ;
+    skos:hasTopConcept edintkosorgtype:BE ;
+    skos:hasTopConcept edintkosorgtype:CA ;
+    skos:hasTopConcept edintkosorgtype:CI ;
+    skos:hasTopConcept edintkosorgtype:CM ;
+    skos:hasTopConcept edintkosorgtype:CN ;
+    skos:hasTopConcept edintkosorgtype:CO ;
+    skos:hasTopConcept edintkosorgtype:CP ;
+    skos:hasTopConcept edintkosorgtype:CS ;
+    skos:hasTopConcept edintkosorgtype:DP ;
+    skos:hasTopConcept edintkosorgtype:EE ;
+    skos:hasTopConcept edintkosorgtype:EG ;
+    skos:hasTopConcept edintkosorgtype:EM ;
+    skos:hasTopConcept edintkosorgtype:EP ;
+    skos:hasTopConcept edintkosorgtype:FN ;
+    skos:hasTopConcept edintkosorgtype:FR ;
+    skos:hasTopConcept edintkosorgtype:FS ;
+    skos:hasTopConcept edintkosorgtype:FU ;
+    skos:hasTopConcept edintkosorgtype:MC ;
+    skos:hasTopConcept edintkosorgtype:MN ;
+    skos:hasTopConcept edintkosorgtype:MU ;
+    skos:hasTopConcept edintkosorgtype:OA ;
+    skos:hasTopConcept edintkosorgtype:OC ;
+    skos:hasTopConcept edintkosorgtype:OD ;
+    skos:hasTopConcept edintkosorgtype:OV ;
+    skos:hasTopConcept edintkosorgtype:SM ;
+    skos:hasTopConcept edintkosorgtype:UN ;
+    skos:hasTopConcept edintkosorgtype:ZZ .
+
+#################################################################
+#
+#    Concepts
+#
+#################################################################
+
+edintkosorgtype:AE a skos:Concept ;
+    skos:prefLabel "Agencia estatal"@es ;
+	skos:prefLabel "State Agency"@en ;
+    skos:notation "AE" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:AG a skos:Concept ;
+    skos:prefLabel "Otras Agrupaciones"@es ;
+	skos:prefLabel "Other Groups"@en ;
+    skos:notation "AG" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:AI a skos:Concept ;
+    skos:prefLabel "Autoridad Administrativa Independiente"@es ;
+	skos:prefLabel "Independent Administrative Authority"@en ;
+    skos:notation "AI" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:AM a skos:Concept ;
+    skos:prefLabel "Area Metropolitana"@es ;
+	skos:prefLabel "Metropolitan Area"@en ;
+    skos:notation "AM" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:AP a skos:Concept ;
+    skos:prefLabel "Autoridades Portuarias y Puertos del Estado"@es ;
+	skos:prefLabel "Port Authorities and State Ports"@en ;
+    skos:notation "AP" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:AT a skos:Concept ;
+    skos:prefLabel "Agencia Estatal de Administración Tributaria"@es ;
+	skos:prefLabel "State Tax Administration Agency"@en ;
+    skos:notation "AT" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:AY a skos:Concept ;
+    skos:prefLabel "Ayuntamiento"@es ;
+    skos:prefLabel "Town Council"@en ;
+	skos:notation "AY" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:BE a skos:Concept ;
+    skos:prefLabel "Banco de España"@es ;
+    skos:prefLabel "Bank of Spain"@en ;
+    skos:notation "BE" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:CA a skos:Concept ;
+    skos:prefLabel "Comunidad Autónoma"@es ;
+    skos:prefLabel "Autonomous Community"@en ;
+    skos:notation "CA" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:CI a skos:Concept ;
+    skos:prefLabel "Cabildo o Consell Insular"@es ;
+	skos:prefLabel "Island Council"@en ;
+    skos:notation "CI" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:CM a skos:Concept ;
+    skos:prefLabel "Cámara"@es ;
+	skos:prefLabel "Chamber"@en ;
+    skos:notation "CM" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:CN a skos:Concept ;
+    skos:prefLabel "Centro Nacional de Inteligencia"@es ;
+	skos:prefLabel "National Intelligence Center"@en ;
+    skos:notation "CN" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:CO a skos:Concept ;
+    skos:prefLabel "Comarca"@es ;
+	skos:prefLabel "County"@en ;
+    skos:notation "CO" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:CP a skos:Concept ;
+    skos:prefLabel "Colegio Profesional"@es ;
+	skos:prefLabel "Professional Association"@en ;
+    skos:notation "CP" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:CS a skos:Concept ;
+    skos:prefLabel "Consorcios"@es ;
+	skos:prefLabel "Consortiums"@en ;
+    skos:notation "CS" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:DP a skos:Concept ;
+    skos:prefLabel "Diputación Provincial o Foral"@es ;
+	skos:prefLabel "Provincial or Regional Council"@en ;
+    skos:notation "DP" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:EE a skos:Concept ;
+    skos:prefLabel "Entidad Pública Empresarial"@es ;
+	skos:prefLabel "Public Business Entity"@en ;
+    skos:notation "EE" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:EG a skos:Concept ;
+    skos:prefLabel "Entidades Gestoras y Servicios Centrales de la Seguridad Social"@es ;
+	skos:prefLabel "Managing Entities and Central Services of Social Security"@en ;
+    skos:notation "EG" ;
+    skos:inScheme edintkos:OrganizationType .
+
+
+edintkosorgtype:EM a skos:Concept ;
+    skos:prefLabel "Entidad local menor"@es ;
+	skos:prefLabel "Minor local entity"@en ;
+    skos:notation "EM" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:EP a skos:Concept ;
+    skos:prefLabel "Entidad de derecho público"@es ;
+	skos:prefLabel "Public law entity"@en ;
+    skos:notation "EP" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:FN a skos:Concept ;
+    skos:prefLabel "Fundación"@es ;
+	skos:prefLabel "Foundation"@en ;
+    skos:notation "FN" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:FR a skos:Concept ;
+    skos:prefLabel "Fondo de Reestructuración Ordenada Bancaria"@es ;
+	skos:prefLabel "Fund for Orderly Bank Restructuring"@en ;
+    skos:notation "FR" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:FS a skos:Concept ;
+    skos:prefLabel "Fondos sin Personalidad Jurídica"@es ;
+	skos:prefLabel "Funds without Legal Personality"@en ;
+    skos:notation "FS" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:FU a skos:Concept ;
+    skos:prefLabel "Fundación Estatal"@es ;
+	skos:prefLabel "State Foundation"@en ;
+    skos:notation "FU" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:MC a skos:Concept ;
+    skos:prefLabel "Mancomunidad"@es ;
+	skos:prefLabel "Association"@en ;
+    skos:notation "MC" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:MN a skos:Concept ;
+    skos:prefLabel "Ministerio"@es ;
+	skos:prefLabel "Ministry"@en ;
+    skos:notation "MN" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:MU a skos:Concept ;
+    skos:prefLabel "Mutuas de Accidentes de Trabajo y Enfermedades Profesionales de la Seguridad Social"@es ;
+	skos:prefLabel "Mutual Insurance Companies for Work Accidents and Occupational Diseases of the Social Security System"@en ;
+    skos:notation "MU" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:OA a skos:Concept ;
+    skos:prefLabel "Organismo Autónomo"@es ;
+	skos:prefLabel "Regional Body"@en ;
+    skos:notation "OA" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:OC a skos:Concept ;
+    skos:prefLabel "Commercial Regional Body"@es ;
+	skos:prefLabel "State Agency"@en ;
+    skos:notation "OC" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:OD a skos:Concept ;
+    skos:prefLabel "Organismos con Dotación Diferenciada en PGE"@es ;
+	skos:prefLabel "Bodies with Differenciated Resources in General State Budgets"@en ;
+    skos:notation "OD" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:OV a skos:Concept ;
+    skos:prefLabel "Organismo Autónomo Administrativo"@es ;
+	skos:prefLabel "Autonomous Administrative Body"@en ;
+    skos:notation "OV" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:SM a skos:Concept ;
+    skos:prefLabel "Sociedades Mercantiles y Asimiladas"@es ;
+	skos:prefLabel "Commercial Companies and Similar Entities"@en ;
+    skos:notation "SM" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:UN a skos:Concept ;
+    skos:prefLabel "Universidad"@es ;
+	skos:prefLabel "University"@en ;
+    skos:notation "UN" ;
+    skos:inScheme edintkos:OrganizationType .
+
+edintkosorgtype:ZZ a skos:Concept ;
+    skos:prefLabel "Sin Clasificar"@es ;
+	skos:prefLabel "Unclassified"@en ;
+    skos:notation "ZZ" ;
+    skos:inScheme edintkos:OrganizationType .
