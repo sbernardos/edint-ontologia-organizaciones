@@ -14,6 +14,7 @@ El prefijo de la ontología es: edintorg y se encuentra publicada en el espacio 
 
 # Modelo conceptual de la ontología (Ontology conceptualization)
 
+Solo incluye los nombre de las propiedades específicas de esta ontología
 ![Diagrama del modelo conceptual](diagrams/diagrama.png)
 
 # Estructura del repositorio (Repository structure)
