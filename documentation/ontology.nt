@@ -1,0 +1,299 @@
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#1.1.1> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/org#> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "Antonio Ibáñez" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "Carlos Jiménez" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "David Rey Jordán" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "Imanol Argüeso" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "José Manuel Crespo" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "José María Subero" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "Martín Alvarez" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "María Dolores Hernández" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Fernández Ruíz" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/contributor> "Toño Velasco" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/elements/1.1/title> "The Spanish Public Organizations Ontology"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/created> "2026-05-07" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/creator> "Daniel Doña" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/creator> "Edna Ruckhaus" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/creator> "Lucía Sánchez" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/creator> "Socorro Bernardos" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/creator> "Óscar Corcho" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/description> "El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones.\nEs una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye edintinf:Equipamiento como subclase de Sede ."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/description> "The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations.\nIt is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including edintinf:Facility as a subclass of Site."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/issued> "2015-02-19" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/license> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/dc/terms/title> "Ontología sobre Organizaciones Públicas en España"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintorg" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/org#subOrganizationOf> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates an organization to the organization at the highest level of hierarchy on which it depends."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una organización con la organización al nivel máximo de jerarquía de la que depende."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#label> "depende de organización raíz"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#label> "depends on root organization"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates an organization to a skos concept that is in the administration level taxonomy of to which an organization belongs."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una organización con un concepto skos que está en la taxonomía de nivel de administración al que pertenece una organización."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has administration level"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "tiene nivel de administración"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates an organization to the administrative region where it exercises its powers."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una organización con el ámbito territorial de ejercicio de sus competencias."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#label> "has competence region"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#label> "tiene ámbito de competencia"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates an organization to a skos concept that is in the taxonomy of status or legal/functional situation of an organization."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una organización con un concepto skos que está en la taxonomía de estados o situación jurídico/funcional de una organización."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has organization status"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#label> "tiene estado de organización"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/org#classification> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates an organization to a skos concept that is in the taxonomy of organization types to which an organization belongs."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una organización con un concepto skos que está en la taxonomía de tipos de organización al que pertenece una organización."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#label> "has organization type"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#label> "tiene tipo de organización"@es .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2004/02/skos/core#> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote> <http://www.w3.org/2000/01/rdf-schema#comment> "Observaciones relacionadas con la baja de una organización."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote> <http://www.w3.org/2000/01/rdf-schema#label> "Notes related to an organization's deregistration."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote> <http://www.w3.org/2000/01/rdf-schema#label> "observación de baja"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote> <http://www.w3.org/2000/01/rdf-schema#label> "note on the deregistration" .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Código externo que designa una organización según la codificación propia de la fuente de provisión."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "External code that designates an organization according to the coding system of the source of provision."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "external identifier"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificador externo"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Secuencia que identifica el nivel jerárquico relativo de la organización dentro de la entidad a la que pertenece.\nPara la raíz de un nivel de administración, este campo deberá ser 0. Para la unidad principal (de máximo nivel) de cualquier Ministerio, Comunidad Autónoma o Entidad Local el campo tomará el valor 1. Más allá de esto, el número se irá incrementando según convenga."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "This sequence identifies the relative hierarchical level of the organization within the entity to which it belongs.\nFor the root of an administrative level, this field should be 0. For the main (highest level) unit of any Ministry, Autonomous Community, or Local Entity, the field will have the value 1. Beyond this, the number will be incremented as appropriate."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel> <http://www.w3.org/2000/01/rdf-schema#label> "hierarchical level"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel> <http://www.w3.org/2000/01/rdf-schema#label> "nivel jerárquico"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificación de la Disposición Legal que regula las competencias de la organización.\nEjemplo: En el caso del BOE se haría referencia al RD de creación del Organismo como Agencia Estatal: «REAL DECRETO 1495/2007 por el que se crea la Agencia Estatal Boletín Oficial del Estado y se aprueba su estatuto»."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision> <http://www.w3.org/2000/01/rdf-schema#comment> "Identification of the legal provision that regulates the organization's powers.\nExample: In the case of the Official State Gazette (BOE), reference would be made to the Royal Decree establishing the agency as a State Agency: \"Royal Decree 1495/2007 establishing the State Agency Official State Gazette and approving its statutes.\""@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision> <http://www.w3.org/2000/01/rdf-schema#label> "disposición legal"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision> <http://www.w3.org/2000/01/rdf-schema#label> "legal provision"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/GovernmentalAdministrativeRegion
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dbpedia.org/ontology/> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#OrganizationalUnit> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Organic Unit with a hierarchical level greater than 1, which depends on a Public Law Entity."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidad Orgánica con un nivel jerárquico mayor a 1, que depende de una Entidad de Derecho Público."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Organic Unit"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Unidad Orgánica"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#FormalOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Organismo creado para satisfacer necesidades de interés general, excluidos los de carácter mercantil o industrial; que tenga personalidad jurídica; que su actividad se financie mayoritariamente con fondos públicos o que su gestión esté sometida al control público o bien que más de la mitad de los miembros de su órgano de administración, de dirección o vigilancia, sean nombrados por el sector público.\n\nMorales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de febrero de 2015, de https://books.google.es/books?id=RozAMdGDMDIC&pg=PA1&lpg=PA1&dq=la+contratación+del+sector+publico+f.+javier+escrihuela"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/2000/01/rdf-schema#label> "An organization created to meet needs of general interest, excluding those of a commercial or industrial nature; that has legal personality; whose activity is financed mainly with public funds or whose management is subject to public control or in which more than half of the members of its administrative, management or supervisory body are appointed by the public sector."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad de Derecho Público"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Public Law Entity"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organización de la administración pública en España"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization of the public administration in Spain"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Organización española"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Spanish organization"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Site> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/goodrelations/v1#BusinessEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/goodrelations/v1#> .
+# 
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov#> .
+# 
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/ns/prov#> .
+# 
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/ns/prov#> .
+# 
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/ns/prov#> .
+# 
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+# 
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+# 
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

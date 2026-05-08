@@ -1,0 +1,312 @@
+@prefix : <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> .
+
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#> rdf:type owl:Ontology ;
+                                                                             owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#1.1.1> ;
+                                                                             owl:imports <http://www.w3.org/ns/org#> ;
+                                                                             <http://purl.org/dc/elements/1.1/contributor> "Antonio Ibáñez" ,
+                                                                                                                           "Carlos Jiménez" ,
+                                                                                                                           "David Rey Jordán" ,
+                                                                                                                           "Imanol Argüeso" ,
+                                                                                                                           "José Manuel Crespo" ,
+                                                                                                                           "José María Subero" ,
+                                                                                                                           "Martín Alvarez" ,
+                                                                                                                           "María Dolores Hernández" ,
+                                                                                                                           "María Jesús Fernández Ruíz" ,
+                                                                                                                           "Toño Velasco" ;
+                                                                             <http://purl.org/dc/elements/1.1/title> "The Spanish Public Organizations Ontology"@en ;
+                                                                             <http://purl.org/dc/terms/created> "2026-05-07" ;
+                                                                             <http://purl.org/dc/terms/creator> "Daniel Doña" ,
+                                                                                                                "Edna Ruckhaus" ,
+                                                                                                                "Lucía Sánchez" ,
+                                                                                                                "Socorro Bernardos" ,
+                                                                                                                "Óscar Corcho" ;
+                                                                             <http://purl.org/dc/terms/description> """El propósito de esta ontología es proporcionar un vocabulario común para la representación de las organizaciones públicas en España, así como aspectos relacionados con los organigramas dentro de dichas organizaciones.
+Es una actualización de una versión previa de la ontología que extendía la ontología del W3C para organizaciones (W3C Organization Ontology). Esta versión adapta esa ontología para cubrir los requisitos EDINT. Como cambios más relevantes, elimina las clases Oficina y Unidad con función de Gestión Económica-Presupuestaria, junto con sus propiedades específicas, e incluye edintinf:Equipamiento como subclase de Sede ."""@es ,
+                                                                                                                    """The purpose of this ontology is to provide a common vocabulary for representing public organizations in Spain, as well as aspects related to organizational charts within those organizations.
+It is an update of a previous version of the ontology that extended the W3C Organization Ontology. This version adapts that ontology to meet EDINT requirements. The most relevant changes include removing the Office and Economic-Budgetary Management Unit classes, along with their specific properties, and including edintinf:Facility as a subclass of Site."""@en ;
+                                                                             <http://purl.org/dc/terms/issued> "2015-02-19" ;
+                                                                             <http://purl.org/dc/terms/license> "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
+                                                                             <http://purl.org/dc/terms/title> "Ontología sobre Organizaciones Públicas en España"@es ;
+                                                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintorg" ;
+                                                                             <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#" ;
+                                                                             owl:versionInfo "0.2.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot
+:dependsOnRoot rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.w3.org/ns/org#subOrganizationOf> ;
+               rdfs:domain :SpanishOrganization ;
+               rdfs:range :SpanishOrganization ;
+               rdfs:comment "It relates an organization to the organization at the highest level of hierarchy on which it depends."@en ,
+                            "Relaciona una organización con la organización al nivel máximo de jerarquía de la que depende."@es ;
+               rdfs:label "depende de organización raíz"@es ,
+                          "depends on root organization"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel
+:hasAdministrationLevel rdf:type owl:ObjectProperty ;
+                        rdfs:domain :SpanishOrganization ;
+                        rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                            owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel>
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+                        rdfs:comment "It relates an organization to a skos concept that is in the administration level taxonomy of to which an organization belongs."@en ,
+                                     "Relaciona una organización con un concepto skos que está en la taxonomía de nivel de administración al que pertenece una organización."@es ;
+                        rdfs:label "has administration level"@en ,
+                                   "tiene nivel de administración"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion
+:hasCompeteceRegion rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SpanishOrganization ;
+                    rdfs:range <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
+                    rdfs:comment "It relates an organization to the administrative region where it exercises its powers."@en ,
+                                 "Relaciona una organización con el ámbito territorial de ejercicio de sus competencias."@es ;
+                    rdfs:label "has competence region"@en ,
+                               "tiene ámbito de competencia"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus
+:hasOrganizationStatus rdf:type owl:ObjectProperty ;
+                       rdfs:domain :SpanishOrganization ;
+                       rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                           owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus>
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+                       rdfs:comment "It relates an organization to a skos concept that is in the taxonomy of status or legal/functional situation of an organization."@en ,
+                                    "Relaciona una organización con un concepto skos que está en la taxonomía de estados o situación jurídico/funcional de una organización."@es ;
+                       rdfs:label "has organization status"@en ,
+                                  "tiene estado de organización"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType
+:hasOrganizationType rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf <http://www.w3.org/ns/org#classification> ;
+                     rdfs:domain :SpanishOrganization ;
+                     rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                         owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                     rdfs:comment "It relates an organization to a skos concept that is in the taxonomy of organization types to which an organization belongs."@en ,
+                                  "Relaciona una organización con un concepto skos que está en la taxonomía de tipos de organización al que pertenece una organización."@es ;
+                     rdfs:label "has organization type"@en ,
+                                "tiene tipo de organización"@es .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:ObjectProperty ;
+                                               rdfs:comment <http://www.w3.org/2004/02/skos/core#> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
+                                      rdfs:isDefinedBy <http://purl.org/dc/terms/> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#deregistrationNote
+:deregistrationNote rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+                    rdfs:comment "Observaciones relacionadas con la baja de una organización."@es ;
+                    rdfs:label "Notes related to an organization's deregistration."@en ,
+                               "observación de baja"@es ,
+                               "note on the deregistration" .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#externalIdentifier
+:externalIdentifier rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+                    rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+                    rdfs:comment "Código externo que designa una organización según la codificación propia de la fuente de provisión."@es ,
+                                 "External code that designates an organization according to the coding system of the source of provision."@en ;
+                    rdfs:label "external identifier"@en ,
+                               "identificador externo"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hierarchicalLevel
+:hierarchicalLevel rdf:type owl:DatatypeProperty ;
+                   rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+                   rdfs:range xsd:integer ;
+                   rdfs:comment """Secuencia que identifica el nivel jerárquico relativo de la organización dentro de la entidad a la que pertenece.
+Para la raíz de un nivel de administración, este campo deberá ser 0. Para la unidad principal (de máximo nivel) de cualquier Ministerio, Comunidad Autónoma o Entidad Local el campo tomará el valor 1. Más allá de esto, el número se irá incrementando según convenga."""@es ,
+                                """This sequence identifies the relative hierarchical level of the organization within the entity to which it belongs.
+For the root of an administrative level, this field should be 0. For the main (highest level) unit of any Ministry, Autonomous Community, or Local Entity, the field will have the value 1. Beyond this, the number will be incremented as appropriate."""@en ;
+                   rdfs:label "hierarchical level"@en ,
+                              "nivel jerárquico"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#legalProvision
+:legalProvision rdf:type owl:DatatypeProperty ;
+                rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+                rdfs:comment """Identificación de la Disposición Legal que regula las competencias de la organización.
+Ejemplo: En el caso del BOE se haría referencia al RD de creación del Organismo como Agencia Estatal: «REAL DECRETO 1495/2007 por el que se crea la Agencia Estatal Boletín Oficial del Estado y se aprueba su estatuto»."""@es ,
+                             """Identification of the legal provision that regulates the organization's powers.
+Example: In the case of the Official State Gazette (BOE), reference would be made to the Royal Decree establishing the agency as a State Agency: \"Royal Decree 1495/2007 establishing the State Agency Official State Gazette and approving its statutes.\""""@en ;
+                rdfs:label "disposición legal"@es ,
+                           "legal provision"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/GovernmentalAdministrativeRegion
+<http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> rdf:type owl:Class ;
+                                                               rdfs:isDefinedBy <http://dbpedia.org/ontology/> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit
+:OrganicUnit rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/org#OrganizationalUnit> ;
+             rdfs:comment "Organic Unit with a hierarchical level greater than 1, which depends on a Public Law Entity."@en ,
+                          "Unidad Orgánica con un nivel jerárquico mayor a 1, que depende de una Entidad de Derecho Público."@es ;
+             rdfs:label "Organic Unit"@en ,
+                        "Unidad Orgánica"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity
+:PublicLawEntity rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/org#FormalOrganization> ;
+                 rdfs:comment """Organismo creado para satisfacer necesidades de interés general, excluidos los de carácter mercantil o industrial; que tenga personalidad jurídica; que su actividad se financie mayoritariamente con fondos públicos o que su gestión esté sometida al control público o bien que más de la mitad de los miembros de su órgano de administración, de dirección o vigilancia, sean nombrados por el sector público.
+
+Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de febrero de 2015, de https://books.google.es/books?id=RozAMdGDMDIC&pg=PA1&lpg=PA1&dq=la+contratación+del+sector+publico+f.+javier+escrihuela"""@es ;
+                 rdfs:label "An organization created to meet needs of general interest, excluding those of a commercial or industrial nature; that has legal personality; whose activity is financed mainly with public funds or whose management is subject to public control or in which more than half of the members of its administrative, management or supervisory body are appointed by the public sector."@en ,
+                            "Entidad de Derecho Público"@es ,
+                            "Public Law Entity"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization
+:SpanishOrganization rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.w3.org/ns/org#Organization> ;
+                     rdfs:comment "Organización de la administración pública en España"@es ,
+                                  "Organization of the public administration in Spain"@en ;
+                     rdfs:label "Organización española"@es ,
+                                "Spanish organization"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf <http://www.w3.org/ns/org#Site> ;
+                                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#> .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/AdministrationLevel> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType
+<http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationType> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/goodrelations/v1#BusinessEntity> rdfs:isDefinedBy <http://purl.org/goodrelations/v1#> .
+
+
+<http://www.w3.org/ns/prov#Activity> rdfs:isDefinedBy <http://www.w3.org/ns/prov#> .
+
+
+<http://www.w3.org/ns/prov#used> rdfs:comment <http://www.w3.org/ns/prov#> .
+
+
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdfs:comment <http://www.w3.org/ns/prov#> .
+
+
+<http://www.w3.org/ns/prov#wasGeneratedBy> rdfs:comment <http://www.w3.org/ns/prov#> .
+
+
+<http://xmlns.com/foaf/0.1/Agent> rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> .
+
+
+<http://xmlns.com/foaf/0.1/Organization> rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> .
+
+
+<http://xmlns.com/foaf/0.1/Person> rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

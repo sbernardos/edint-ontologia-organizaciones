@@ -1,0 +1,20 @@
+<h2 id="desc" class="list">Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">
+<p>Figure 1 shows the main classes of the ontology and their properties, although it only includes the names of those that are specific to the ontology. As can be seen, this is an extension of the <a href="http://www.w3.org/ns/org#">Organization Ontology</a> of <a href="https://www.w3.org/">W3C</a> to represent particular aspects of public administration organizations in Spain. To this end, a subtype of <a href="http://www.w3.org/ns/org#Organization">organization</a> called <a href="#SpanishOrganization">Spanish organization</a> has been created. This organization <a href="#hasCompetenceRegion">has a competence region</a>, which is an <a href="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion">administrative region</a> of Spain (<a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia">autonomous community</a>, <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia">province</a>, <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca">county</a>, <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">district</a>, <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">municipality</a>).
+</p>
+
+<p><a href="#SpanishOrganization">Spanish organizations</a> have properties to represent their <a href="#externalIdentifier">external identifier</a>, the <a href="#legalProvision">legal provision</a> that regulates the organization, their <a href="#hierarchicalLevel">hierarchical level</a> within the organization to which they belong, and <a href="#DeregistrationNote">notes regarding their deregistration</a>, if it has occurred. In addition, they <a href="#hasOrganizationStatus">have a status</a>, <a href="#hasOrganizationType">correspond to a type</a>, and are <a href="#hasAdministrationLevel">located at an administration level</a>, which are represented by <a href="http://www.w3.org/2004/02/skos/core#Concept">SKOS concepts</a>, with the corresponding taxonomy. 
+</p>
+
+<p>A subclass of <a href="http://www.w3.org/ns/org#OrganizationalUnit">organizational unit</a> called <a href="#OrganicUnit">organic unit</a> has also been created to represent organizational units that <a href="http://www.w3.org/ns/org#unitOf">belong to</a> a <a href="#PublicLawEntity">public law entity</a>, which is a subclass of <a href="http://www.w3.org/ns/org#FormalOrganization">formal organization</a> created to meet needs of general interest and whose activity depends on public funding or control.
+</p>
+
+<p>Finally, the <a href="#Facility">facilities</a> of the <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#">infrastructure ontology</a> have been considered as a subclass of <a href="http://www.w3.org/ns/org#Site">site</a>.
+</p>
+
+<p><center><img src="images/diagrama.png" style="width:100%;"/><figcaption>
+Figure 1. Conceptual model of the ontology (only includes names of specific properties).
+</figcaption></center></p>
+
+</span>
