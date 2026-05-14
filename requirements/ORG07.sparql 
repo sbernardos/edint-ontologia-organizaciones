@@ -1,0 +1,26 @@
+# ORG07: ¿Qué organizaciones pertenecen a un determinado nivel de administración?
+
+PREFIX edintorg: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#>
+PREFIX org:      <http://www.w3.org/ns/org#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?organization ?organizationLabel ?administrationLevel ?administrationLevelLabel
+WHERE {
+  # Sustituir por el nivel administrativo concreto:
+  # VALUES ?administrationLevel { <URI_DEL_NIVEL_ADMINISTRATIVO> }
+
+  ?organization a org:Organization ;
+                edintorg:hasAdministrationLevel ?administrationLevel .
+
+  OPTIONAL {
+    ?organization rdfs:label ?organizationLabel .
+    FILTER(LANG(?organizationLabel) = "es" || LANG(?organizationLabel) = "")
+  }
+
+  OPTIONAL {
+    ?administrationLevel skos:prefLabel ?administrationLevelLabel .
+    FILTER(LANG(?administrationLevelLabel) = "es" || LANG(?administrationLevelLabel) = "")
+  }
+}
+ORDER BY ?organizationLabel

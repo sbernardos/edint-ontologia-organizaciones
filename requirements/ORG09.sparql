@@ -1,0 +1,30 @@
+# ORG09: ¿Qué organizaciones están dadas de baja o han dejado de estar activas?
+
+PREFIX edintorg: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#>
+PREFIX org:      <http://www.w3.org/ns/org#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?organization ?organizationLabel ?status ?statusLabel ?deregistrationNote
+WHERE {
+  ?organization a org:Organization ;
+                edintorg:hasOrganizationStatus ?status .
+
+  ?status skos:prefLabel ?statusLabel .
+
+  FILTER(LANG(?statusLabel) = "es" || LANG(?statusLabel) = "")
+  FILTER(
+    CONTAINS(LCASE(STR(?statusLabel)), "Anulado") ||
+    CONTAINS(LCASE(STR(?statusLabel)), "Extinguido")
+  )
+
+  OPTIONAL {
+    ?organization edintorg:deregistrationNote ?deregistrationNote .
+  }
+
+  OPTIONAL {
+    ?organization rdfs:label ?organizationLabel .
+    FILTER(LANG(?organizationLabel) = "es" || LANG(?organizationLabel) = "")
+  }
+}
+ORDER BY ?organizationLabel

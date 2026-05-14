@@ -1,0 +1,25 @@
+# ORG08: ¿En qué territorio ejerce sus competencias una organización?
+
+PREFIX edintorg: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#>
+PREFIX org:      <http://www.w3.org/ns/org#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?organization ?organizationLabel ?competenceRegion ?competenceRegionLabel
+WHERE {
+  # Sustituir por la organización concreta si se quiere consultar una sola:
+  # VALUES ?organization { <URI_DE_LA_ORGANIZACION> }
+
+  ?organization a org:Organization ;
+                edintorg:hasCompetenceRegion ?competenceRegion .
+
+  OPTIONAL {
+    ?organization rdfs:label ?organizationLabel .
+    FILTER(LANG(?organizationLabel) = "es" || LANG(?organizationLabel) = "")
+  }
+
+  OPTIONAL {
+    ?competenceRegion rdfs:label ?competenceRegionLabel .
+    FILTER(LANG(?competenceRegionLabel) = "es" || LANG(?competenceRegionLabel) = "")
+  }
+}
+ORDER BY ?organizationLabel

@@ -1,0 +1,23 @@
+# ORG02: ¿Qué unidades orgánicas dependen de una entidad de derecho público?
+
+PREFIX edintorg: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?organicUnit ?organicUnitLabel ?publicLawEntity ?publicLawEntityLabel
+WHERE {
+  ?organicUnit a edintorg:OrganicUnit ;
+               edintorg:dependsOnRoot ?publicLawEntity .
+
+  ?publicLawEntity a edintorg:PublicLawEntity .
+
+  OPTIONAL {
+    ?organicUnit rdfs:label ?organicUnitLabel .
+    FILTER(LANG(?organicUnitLabel) = "es" || LANG(?organicUnitLabel) = "")
+  }
+
+  OPTIONAL {
+    ?publicLawEntity rdfs:label ?publicLawEntityLabel .
+    FILTER(LANG(?publicLawEntityLabel) = "es" || LANG(?publicLawEntityLabel) = "")
+  }
+}
+ORDER BY ?publicLawEntityLabel ?organicUnitLabel

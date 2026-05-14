@@ -1,0 +1,36 @@
+# ORG10: ¿Qué personas ocupan un rol dentro de una organización?
+
+PREFIX org:  <http://www.w3.org/ns/org#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?person ?personName ?organization ?organizationLabel ?role ?roleLabel
+WHERE {
+
+  # Sustituir por la organización concreta si se quiere limitar a una organización:
+  # VALUES ?organization { <URI_DE_LA_ORGANIZACION> }
+
+  ?membership a org:Membership ;
+              org:member ?person ;
+              org:organization ?organization ;
+              org:role ?role .
+
+  ?person a foaf:Person .
+
+  OPTIONAL {
+    ?person foaf:name ?personName .
+  }
+
+  OPTIONAL {
+    ?organization rdfs:label ?organizationLabel .
+    FILTER(LANG(?organizationLabel) = "es" || LANG(?organizationLabel) = "")
+  }
+
+  OPTIONAL {
+    ?role skos:prefLabel ?roleLabel .
+    FILTER(LANG(?roleLabel) = "es" || LANG(?roleLabel) = "")
+  }
+
+}
+ORDER BY ?organizationLabel ?roleLabel ?personName

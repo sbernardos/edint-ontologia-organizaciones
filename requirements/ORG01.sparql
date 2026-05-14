@@ -1,0 +1,15 @@
+# ORG01: ¿Qué organizaciones son entidades de derecho público?
+
+PREFIX edintorg: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?organization ?label
+WHERE {
+  ?organization a edintorg:PublicLawEntity .
+
+  OPTIONAL {
+    ?organization rdfs:label ?label .
+    FILTER(LANG(?label) = "es" || LANG(?label) = "")
+  }
+}
+ORDER BY ?label

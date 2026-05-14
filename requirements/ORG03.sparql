@@ -1,0 +1,15 @@
+#ORG03: ¿Qué organizaciones son organizaciones formales?
+
+PREFIX org:  <http://www.w3.org/ns/org#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?organization ?label
+WHERE {
+  ?organization a org:FormalOrganization .
+
+  OPTIONAL {
+    ?organization rdfs:label ?label .
+    FILTER(LANG(?label) = "es" || LANG(?label) = "")
+  }
+}
+ORDER BY ?label

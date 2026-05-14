@@ -1,0 +1,25 @@
+ORG04: ¿Cuál es el organismo principal del que depende una unidad?
+
+PREFIX edintorg: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#>
+PREFIX org:      <http://www.w3.org/ns/org#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?unit ?unitLabel ?rootOrganization ?rootOrganizationLabel
+WHERE {
+  # Sustituir por la unidad concreta si se quiere consultar una sola:
+  # VALUES ?unit { <URI_DE_LA_UNIDAD> }
+
+  ?unit a edintorg:OrganicUnit ;
+        edintorg:dependsOnRoot ?rootOrganization .
+
+  OPTIONAL {
+    ?unit rdfs:label ?unitLabel .
+    FILTER(LANG(?unitLabel) = "es" || LANG(?unitLabel) = "")
+  }
+
+  OPTIONAL {
+    ?rootOrganization rdfs:label ?rootOrganizationLabel .
+    FILTER(LANG(?rootOrganizationLabel) = "es" || LANG(?rootOrganizationLabel) = "")
+  }
+}
+ORDER BY ?unitLabel

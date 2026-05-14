@@ -1,0 +1,28 @@
+# ORG06: ¿Cuál es la situación o estado actual de una organización?
+
+PREFIX edintorg: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#>
+PREFIX org:      <http://www.w3.org/ns/org#>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?organization ?organizationLabel ?status ?statusLabel
+WHERE {
+  # Sustituir por la organización concreta si se quiere consultar una sola:
+  # VALUES ?organization { <URI_DE_LA_ORGANIZACION> }
+
+  ?organization a org:Organization ;
+                edintorg:hasOrganizationStatus ?status .
+  ?status a skos:Concept ;
+          skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/edint/OrganizationStatus> .
+
+  OPTIONAL {
+    ?organization rdfs:label ?organizationLabel .
+    FILTER(LANG(?organizationLabel) = "es" || LANG(?organizationLabel) = "")
+  }
+
+  OPTIONAL {
+    ?status skos:prefLabel ?statusLabel .
+    FILTER(LANG(?statusLabel) = "es" || LANG(?statusLabel) = "")
+  }
+}
+ORDER BY ?organizationLabel
