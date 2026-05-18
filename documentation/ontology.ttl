@@ -88,8 +88,8 @@ It is an update of a previous version of the ontology that extended the W3C Orga
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot
 :dependsOnRoot rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf <http://www.w3.org/ns/org#subOrganizationOf> ;
-               rdfs:domain :SpanishOrganization ;
-               rdfs:range :SpanishOrganization ;
+               rdfs:domain :Organization ;
+               rdfs:range :Organization ;
                rdfs:comment "It relates an organization to the organization at the highest level of hierarchy on which it depends."@en ,
                             "Relaciona una organización con la organización al nivel máximo de jerarquía de la que depende."@es ;
                rdfs:label "depende de organización raíz"@es ,
@@ -98,7 +98,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel
 :hasAdministrationLevel rdf:type owl:ObjectProperty ;
-                        rdfs:domain :SpanishOrganization ;
+                        rdfs:domain :Organization ;
                         rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                           [ rdf:type owl:Restriction ;
                                                             owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -115,7 +115,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion
 :hasCompeteceRegion rdf:type owl:ObjectProperty ;
-                    rdfs:domain :SpanishOrganization ;
+                    rdfs:domain :Organization ;
                     rdfs:range <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
                     rdfs:comment "It relates an organization to the administrative region where it exercises its powers."@en ,
                                  "Relaciona una organización con el ámbito territorial de ejercicio de sus competencias."@es ;
@@ -125,7 +125,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus
 :hasOrganizationStatus rdf:type owl:ObjectProperty ;
-                       rdfs:domain :SpanishOrganization ;
+                       rdfs:domain :Organization ;
                        rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -143,7 +143,7 @@ It is an update of a previous version of the ontology that extended the W3C Orga
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType
 :hasOrganizationType rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf <http://www.w3.org/ns/org#classification> ;
-                     rdfs:domain :SpanishOrganization ;
+                     rdfs:domain :Organization ;
                      rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
@@ -232,6 +232,15 @@ Example: In the case of the Official State Gazette (BOE), reference would be mad
                         "Unidad Orgánica"@es .
 
 
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/org#Organization> ;
+              rdfs:comment "Organización de la administración pública en España"@es ,
+                           "Organization of the public administration in Spain"@en ;
+              rdfs:label "Organización"@es ,
+                         "Organization"@en .
+
+
 ###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity
 :PublicLawEntity rdf:type owl:Class ;
                  rdfs:subClassOf <http://www.w3.org/ns/org#FormalOrganization> ;
@@ -243,13 +252,34 @@ Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de
                             "Public Law Entity"@en .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization
-:SpanishOrganization rdf:type owl:Class ;
-                     rdfs:subClassOf <http://www.w3.org/ns/org#Organization> ;
-                     rdfs:comment "Organización de la administración pública en España"@es ,
-                                  "Organization of the public administration in Spain"@en ;
-                     rdfs:label "Organización española"@es ,
-                                "Spanish organization"@en .
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
+                                                                                 rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
+                                                                                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> ;
+                                                                                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility

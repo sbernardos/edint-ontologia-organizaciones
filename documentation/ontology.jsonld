@@ -197,6 +197,26 @@
     "@id" : "http://www.w3.org/ns/org#OrganizationalUnit"
   } ]
 }, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Organización de la administración pública en España"
+  }, {
+    "@language" : "en",
+    "@value" : "Organization of the public administration in Spain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Organización"
+  }, {
+    "@language" : "en",
+    "@value" : "Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/org#Organization"
+  } ]
+}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -217,26 +237,6 @@
     "@id" : "http://www.w3.org/ns/org#FormalOrganization"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Organización de la administración pública en España"
-  }, {
-    "@language" : "en",
-    "@value" : "Organization of the public administration in Spain"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Organización española"
-  }, {
-    "@language" : "en",
-    "@value" : "Spanish organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
-  } ]
-}, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -247,7 +247,7 @@
     "@value" : "Relaciona una organización con la organización al nivel máximo de jerarquía de la que depende."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
@@ -257,7 +257,7 @@
     "@value" : "depends on root organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/ns/org#subOrganizationOf"
@@ -315,7 +315,7 @@
     "@value" : "Relaciona una organización con un concepto skos que está en la taxonomía de nivel de administración al que pertenece una organización."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -338,7 +338,7 @@
     "@value" : "Relaciona una organización con el ámbito territorial de ejercicio de sus competencias."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -361,7 +361,7 @@
     "@value" : "Relaciona una organización con un concepto skos que está en la taxonomía de estados o situación jurídico/funcional de una organización."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -384,7 +384,7 @@
     "@value" : "Relaciona una organización con un concepto skos que está en la taxonomía de tipos de organización al que pertenece una organización."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -441,6 +441,51 @@
   }, {
     "@language" : "en",
     "@value" : "legal provision"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility",

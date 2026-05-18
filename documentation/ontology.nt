@@ -77,8 +77,8 @@
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/org#subOrganizationOf> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates an organization to the organization at the highest level of hierarchy on which it depends."@en .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una organización con la organización al nivel máximo de jerarquía de la que depende."@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#dependsOnRoot> <http://www.w3.org/2000/01/rdf-schema#label> "depende de organización raíz"@es .
@@ -86,7 +86,7 @@
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasAdministrationLevel> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
@@ -106,7 +106,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates an organization to the administrative region where it exercises its powers."@en .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasCompeteceRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona una organización con el ámbito territorial de ejercicio de sus competencias."@es .
@@ -115,7 +115,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationStatus> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
@@ -136,7 +136,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/org#classification> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#hasOrganizationType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
@@ -226,6 +226,14 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Organic Unit"@en .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#OrganicUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Unidad Orgánica"@es .
 # 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organización de la administración pública en España"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization of the public administration in Spain"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organización"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
 # http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#FormalOrganization> .
@@ -234,13 +242,30 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entidad de Derecho Público"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#PublicLawEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Public Law Entity"@en .
 # 
-# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organización de la administración pública en España"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization of the public administration in Spain"@en .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Organización española"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/organizacion#SpanishOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Spanish organization"@en .
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/GovernmentalAdministrativeRegion> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 # 
 # http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
